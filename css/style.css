@@ -10,11 +10,24 @@
 
 body {
   font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
   font-style: normal;
   font-weight: 400;
   color: var(--body-text-color);
   background-color: var(--primery-white-color);
+  letter-spacing: 0.02em;
 }
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+  font-style: normal;
+}
+
 
 /* стили для index.html*/
 /* header */
@@ -23,6 +36,7 @@ body {
 }
 
 .logo {
+  text-transform: uppercase;
   font-family: 'Raleway';
   font-weight: 800;
   font-size: 18px;
@@ -38,21 +52,23 @@ body {
   color: var(--primery-white-color);
 }
 
-.nav-link {
+.nav.link {
   color: var(--dark-brand-color);
 }
 
-.nav-link.active {
+.nav.link:hover, .nav.link:focus {
+  color: var(--accent-link-color)
+}
+
+.nav.link.active {
   color: var(--accent-link-color);
 }
 
-.address-link {
+.address.link {
   color: var(--body-text-color);
-  font-size: 16px;
-  line-height: 1.5;
 }
 
-.address-link:hover {
+.address.link:hover {
   color: var(--accent-link-color);
 }
 
@@ -70,12 +86,16 @@ body {
 }
 
 .button.hero {
+  font-family: inherit;
   background-color: var(--primery-brend-color);
   color: var(--primery-white-color);
   font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
   cursor: pointer;
+  padding: 16px 32px;
+  gap: 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-style: none;
+  border-radius: 4px;
 }
 
 .button.hero:hover {
@@ -89,12 +109,6 @@ body {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-}
-
-.item-text {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
 }
 
 /* doing */
@@ -125,11 +139,6 @@ body {
   line-height: 1.2;
 }
 
-.position {
-  font-size: 16px;
-  line-height: 1.5;
-}
-
 /* footer */
 
 .footer {
@@ -145,23 +154,21 @@ body {
 /* filter */
 
 .filter-button {
+  font-family: inherit;
+  padding: 12px 24px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
   color: var(--primery-brend-color);
   background-color: var(--secondary-white-color);
   border-color: var(--border-color);
   cursor: pointer;
 }
 
-.filter-button:hover {
+.filter-button:hover, .filter-button:focus {
   color: var(--primery-white-color);
-  border: 1px solid var(--accent-link-color)
-}
-
-.port-var {
-  border: 1px solid var(--border-color)
-}
-
-.img-variant {
-  cursor: pointer;
+  background-color: var(--accent-link-color);
+  border: 1px solid var(--accent-link-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .port-name {
@@ -174,7 +181,10 @@ body {
 
 .port-filtr {
   color: var(--body-text-color);
-  font-size: 16px;
-  line-height: 1.5;
   cursor: pointer;
+}
+
+.hide {
+  position: absolute;
+  visibility: hidden;
 }
