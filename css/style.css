@@ -1,152 +1,154 @@
 :root {
-  --body-text-color: #434455;
-  --primery-white-color: #ffffff;
-  --header-text-color: #2E2F42;
-  --primery-brend-color: #4D5AE5;
-  --accent-link-color: #404BBF;
-  --border-color: #E7E9FC;
-  --secondary-white-color: #F4F4FD;
+	--body-text-color: #434455;
+	--primery-white-color: #ffffff;
+	--header-text-color: #2e2f42;
+	--primery-brend-color: #4d5ae5;
+	--accent-link-color: #404bbf;
+	--border-color: #e7e9fc;
+	--secondary-white-color: #f4f4fd;
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  font-style: normal;
-  font-weight: 400;
-  color: var(--body-text-color);
-  background-color: var(--primery-white-color);
-  letter-spacing: 0.02em;
+	font-family: "Roboto", sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	font-style: normal;
+	font-weight: 400;
+	color: var(--body-text-color);
+	background-color: var(--primery-white-color);
+	letter-spacing: 0.02em;
 }
 
 .list {
-  list-style: none;
+	list-style: none;
 }
 
 .link {
-  text-decoration: none;
-  font-style: normal;
+	text-decoration: none;
+	font-style: normal;
 }
-
 
 /* стили для index.html*/
 /* header */
 .header {
-  border-bottom:1px solid var(--border-color);
+	border-bottom: 1px solid var(--border-color);
 }
 
 .logo {
-  text-transform: uppercase;
-  font-family: 'Raleway';
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.3;
-  color: var(--primery-brend-color);
+	text-transform: uppercase;
+	font-family: "Raleway";
+	font-weight: 800;
+	font-size: 18px;
+	line-height: 1.3;
+	color: var(--primery-brend-color);
 }
 
 .logo.dark {
-  color: var(--header-text-color);
+	color: var(--header-text-color);
 }
 
 .logo.white {
-  color: var(--primery-white-color);
+	color: var(--primery-white-color);
 }
 
 .nav.link {
-  color: var(--dark-brand-color);
+	color: var(--dark-brand-color);
 }
 
-.nav.link:hover, .nav.link:focus {
-  color: var(--accent-link-color)
+.nav.link:hover,
+.nav.link:focus {
+	color: var(--accent-link-color);
 }
 
 .nav.link.active {
-  color: var(--accent-link-color);
+	color: var(--accent-link-color);
 }
 
 .address.link {
-  color: var(--body-text-color);
+	color: var(--body-text-color);
 }
 
 .address.link:hover {
-  color: var(--accent-link-color);
+	color: var(--accent-link-color);
 }
 
 /* main */
 
 .section.hero {
-  background-color: var(--header-text-color);
+	background-color: var(--header-text-color);
 }
 
 .hero-header {
-  color: var(--primery-white-color);
-  font-weight: 700;
-  font-size: 56px;
-  line-height: 1.1;
+	color: var(--primery-white-color);
+	font-weight: 700;
+	font-size: 56px;
+	line-height: 1.1;
 }
 
 .button.hero {
-  font-family: inherit;
-  background-color: var(--primery-brend-color);
-  color: var(--primery-white-color);
-  font-weight: 500;
-  cursor: pointer;
-  padding: 16px 32px;
-  gap: 10px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-style: none;
-  border-radius: 4px;
+	font-family: inherit;
+	background-color: var(--primery-brend-color);
+	color: var(--primery-white-color);
+	font-weight: 500;
+	cursor: pointer;
+	padding: 16px 32px;
+	gap: 10px;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	border-style: none;
+	border-radius: 4px;
 }
 
 .button.hero:hover {
-  background-color: var(--accent-link-color);
+	background-color: var(--accent-link-color);
 }
 
 /* advanteges*/
 
 .item-header {
-  color: var(--header-text-color);
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
+	color: var(--header-text-color);
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 1.2;
 }
 
 /* doing */
 
 .section-header {
-  color: var(--header-text-color);
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.1;
+	color: var(--header-text-color);
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.1;
 }
 
 .pic {
-  border: 1px solid var(--border-color);
+	border: 1px solid var(--border-color);
 }
 
 .section.team {
-  background-color: var(--secondary-white-color);
+	background-color: var(--secondary-white-color);
 }
 
 .team.item {
-  background-color: var(--primery-white-color)
+	background-color: var(--primery-white-color);
+	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+	border-radius: 0px 0px 4px 4px;
 }
 
 .name {
-  color: var(--header-text-color);
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
+	color: var(--header-text-color);
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 1.2;
 }
 
 /* footer */
 
 .footer {
-  background-color: var(--header-text-color)
+	background-color: var(--header-text-color);
 }
 
 .footer.text {
-  color: var(--primery-white-color)
+	color: var(--primery-white-color);
 }
 
 /* portfolio */
@@ -154,37 +156,38 @@ body {
 /* filter */
 
 .filter-button {
-  font-family: inherit;
-  padding: 12px 24px;
-  border: 1px solid var(--border-color);
-  border-radius: 4px;
-  color: var(--primery-brend-color);
-  background-color: var(--secondary-white-color);
-  border-color: var(--border-color);
-  cursor: pointer;
+	font-family: inherit;
+	padding: 12px 24px;
+	border: 1px solid var(--border-color);
+	border-radius: 4px;
+	color: var(--primery-brend-color);
+	background-color: var(--secondary-white-color);
+	border-color: var(--border-color);
+	cursor: pointer;
 }
 
-.filter-button:hover, .filter-button:focus {
-  color: var(--primery-white-color);
-  background-color: var(--accent-link-color);
-  border: 1px solid var(--accent-link-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+.filter-button:hover,
+.filter-button:focus {
+	color: var(--primery-white-color);
+	background-color: var(--accent-link-color);
+	border: 1px solid var(--accent-link-color);
+	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .port-name {
-  color: var(--header-text-color);
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  cursor: pointer;
+	color: var(--header-text-color);
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 1.2;
+	cursor: pointer;
 }
 
 .port-filtr {
-  color: var(--body-text-color);
-  cursor: pointer;
+	color: var(--body-text-color);
+	cursor: pointer;
 }
 
 .hide {
-  position: absolute;
-  visibility: hidden;
+	position: absolute;
+	visibility: hidden;
 }
